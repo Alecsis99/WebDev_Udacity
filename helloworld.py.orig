@@ -1,0 +1,18 @@
+import webapp2
+
+class MainPage(webapp2.RequestHandler):
+    def get(self):
+        self.response.headers['Content-Type'] = 'text/plain'
+        self.response.write('Hello Udacity! This is cool!')
+<<<<<<< HEAD
+        self.response.write('Hello Udacity! This is cool!')
+
+application = webapp2.WSGIApplication([
+    ('/', MainPage),
+], debug=True)
+=======
+        self.response.write('See if the files are updated in Google')
+application = webapp2.WSGIApplication([
+    ('/', MainPage),
+], debug=True)
+>>>>>>> 10da22529d9925284e12347772e61308ea5e669f
